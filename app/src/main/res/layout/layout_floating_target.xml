@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp">
+
+        <!-- دایره بیرونی نشانه‌گیر هدف -->
+        <View
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="#44EF4444" />
+
+        <!-- خطوط متقاطع کراس‌هیر -->
+        <View
+            android:layout_width="64dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#EF4444" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="#EF4444" />
+
+        <!-- نقطه دقیق لمس -->
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:background="#EF4444" />
+
+        <!-- برچسب شماره هدف -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:background="#EF4444"
+            android:paddingHorizontal="4dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X: 540 | Y: 1100"
+        android:textColor="#FFFFFF"
+        android:background="#CC020617"
+        android:padding="2dp"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:gravity="center" />
+</LinearLayout>
